@@ -1,0 +1,121 @@
+@font-face {
+  font-family: 'Figtree-SemiBold';
+  src: url('assets/fonts/Figtree-SemiBold.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Figtree-ExtraBold';
+  src: url('assets/fonts/Figtree-ExtraBold.woff') format('woff');
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Figtree-SemiBold';
+  background: hsl(47, 88%, 63%);
+  font-size: 16px;
+}
+
+main {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  width: 400x;
+  background: hsl(0, 0%, 100%);
+  display: flex;
+  gap: 10px;
+  flex-direction: column;
+  padding: 20px;
+  border: 1px solid hsl(0, 0%, 7%);
+  border-radius: 15px;
+  box-shadow: 8px 8px 0 2px hsl(0, 0%, 7%);
+  transition: 0.1s;
+}
+
+.container .illustration-img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.container .learning-btn {
+  text-decoration: none;
+  color: hsl(0, 0%, 7%);
+  background: hsl(47, 88%, 63%);
+  width: 100px;
+  text-align: center;
+  font-family: 'Figtree-ExtraBold';
+  font-size: 14px;
+  padding: 5px;
+}
+
+.container .date {
+  color: hsl(0, 0%, 7%);
+  font-size: 14px;
+}
+
+.container h2 {
+  color: hsl(0, 0%, 7%);
+  font-family: 'Figtree-ExtraBold';
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.container h2:hover {
+  color: hsl(47, 88%, 63%);
+}
+
+.container:active {
+  box-shadow: 15px 15px 0 2px hsl(0, 0%, 7%);
+}
+
+.container h2:active + .container {
+  box-shadow: 15px 15px 0 2px hsl(0, 0%, 7%);
+}
+
+.container p {
+  color: hsl(0, 0%, 50%);
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.avatar-container {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.avatar-container img {
+  width: 30px;
+}
+.avatar-container span {
+  font-family: 'Figtree-ExtraBold';
+  font-size: 14px;
+}
+
+/* Media Queries */
+@media (max-width: 375px) {
+  .container {
+    width: 320px;
+  }
+
+  .container h2 {
+    font-size: 20px;
+  }
+
+  .container p {
+    font-size: 14px;
+  }
+
+  .avatar-container img {
+    width: 25px;
+  }
+}
