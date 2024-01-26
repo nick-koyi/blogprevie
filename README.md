@@ -14,7 +14,7 @@ This is a solution to the [Blog preview card challenge on Frontend Mentor](https
 
 ### Links
 
-- Live Site URL: [Visit Site](https://recipepage-sooty.vercel.app/)
+- Live Site URL: [Visit Site](https://blogprevie-git-main-nick-koyis-projects.vercel.app/)
 
 ## My process
 
